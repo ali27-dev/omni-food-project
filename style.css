@@ -12,11 +12,73 @@ body {
   font-weight: 400;
   color: #555;
 }
+
+/* her-section */
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 9.6rem 0;
+}
+.header-primary {
+  font-size: 5.2rem;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1.05;
+  margin-bottom: 3.2rem;
+}
 .hero {
   max-width: 130rem;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 9.6rem;
+  align-items: center;
+}
+.text-description {
+  font-size: 2rem;
+  line-height: 1.6;
+  margin-bottom: 4.8rem;
+}
+
+/* buttons-section */
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  /* background-color: #e67e22; */
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  transition: background-color 0.3s;
+}
+
+.margin-right-sm {
+  margin-right: 1.6rem;
+}
+
+.btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+}
+
+.btn--out:link,
+.btn--out:visited {
+  background-color: #fff;
+  color: #555;
+
+  /* border: 2px solid #fff; */
+}
+.btn--out:hover,
+.btn--out:active {
+  background-color: #fdf2e9;
+  /* border: 3px solid #fff; */
+  box-shadow: inset 0 0 0 3px #fff;
 }
 .hero-img {
   width: 100%;
