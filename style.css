@@ -13,7 +13,10 @@ body {
   color: #555;
 }
 
-/* header-style-start */
+/**************************/
+/* HEADER */
+/**************************/
+
 .header {
   display: flex;
   height: 9.6rem;
@@ -25,9 +28,51 @@ body {
 .logo {
   height: 2.2rem;
 }
-/* header-style-start */
 
-/* hero-section */
+/**************************/
+/* navigation */
+/**************************/
+
+.main-nav-li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+  gap: 3.2rem;
+}
+
+.nav-li-link:link,
+.nav-li-link:visited {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+  color: #555;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.nav-li-link:hover,
+.nav-li-link:active {
+  color: #cf711f;
+}
+
+.nav-btn:link,
+.nav-btn:visited {
+  background-color: #e67e22;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9px;
+  color: #fff;
+}
+.nav-btn:hover,
+.nav-btn:active {
+  background-color: #cf711f;
+}
+
+/**************************/
+/* HERO */
+/**************************/
+
 .section-hero {
   background-color: #fdf2e9;
   padding: 4.8rem 0 9.6rem 0;
@@ -55,12 +100,12 @@ body {
   margin-bottom: 4.8rem;
 }
 
-/* buttons-section */
-
+/**************************/
+/* HERO-BUTTON */
+/**************************/
 .btn:link,
 .btn:visited {
   display: inline-block;
-  /* background-color: #e67e22; */
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
@@ -83,13 +128,10 @@ body {
 .btn--out:visited {
   background-color: #fff;
   color: #555;
-
-  /* border: 2px solid #fff; */
 }
 .btn--out:hover,
 .btn--out:active {
   background-color: #fdf2e9;
-  /* border: 3px solid #fff; */
   box-shadow: inset 0 0 0 3px #fff;
 }
 .hero-img {
@@ -131,3 +173,34 @@ body {
   color: #cf711f;
   font-weight: 700;
 }
+
+/**************************/
+/* HOW-SECTION */
+/**************************/
+
+.section-how {
+  padding: 9.6rem 0;
+  background-color: red;
+}
+
+.container {
+  /* 1140px */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+}
+.grid-2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+/*f
+.section-how div div {
+  padding: 100px;
+  font-size: 50px;
+  background-color: #e67e22;
+} */
