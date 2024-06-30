@@ -1,18 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-}
-body {
-  font-family: "Rubik", sans-serif;
-  line-height: 1;
-  font-weight: 400;
-  color: #555;
-}
-
 /**************************/
 /* HEADER */
 /**************************/
@@ -78,43 +63,6 @@ body {
   padding: 4.8rem 0 9.6rem 0;
 }
 
-.header-primary,
-.heading-secondary,
-.heading-tertiary {
-  color: #333;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-}
-.header-primary {
-  font-size: 5.2rem;
-  color: #333;
-  font-weight: 700;
-  letter-spacing: -0.5px;
-  line-height: 1.05;
-  margin-bottom: 3.2rem;
-}
-
-.heading-secondary {
-  font-size: 4.4rem;
-  line-height: 1.2;
-  margin-bottom: 9.8rem;
-}
-.heading-tertiary {
-  font-size: 3rem;
-  line-height: 1.2;
-  margin-bottom: 3.2rem;
-  /* font-weight: 500; */
-}
-.subheading {
-  display: block;
-  font-size: 1.6rem;
-  color: #cf711f;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-bottom: 1.6rem;
-  letter-spacing: 0.75px;
-}
-
 .hero {
   max-width: 130rem;
   margin: 0 auto;
@@ -130,40 +78,6 @@ body {
   margin-bottom: 4.8rem;
 }
 
-/**************************/
-/* HERO-BUTTON */
-/**************************/
-.btn:link,
-.btn:visited {
-  display: inline-block;
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: 600;
-  padding: 1.6rem 3.2rem;
-  border-radius: 9px;
-  transition: all 0.3s;
-}
-
-.btn--full:link,
-.btn--full:visited {
-  background-color: #e67e22;
-  color: #fff;
-}
-.btn--full:hover,
-.btn--full:active {
-  background-color: #cf711f;
-}
-
-.btn--out:link,
-.btn--out:visited {
-  background-color: #fff;
-  color: #555;
-}
-.btn--out:hover,
-.btn--out:active {
-  background-color: #fdf2e9;
-  box-shadow: inset 0 0 0 3px #fff;
-}
 .hero-img {
   width: 100%;
 }
@@ -251,36 +165,11 @@ body {
   margin: 0 auto;
 }
 
-.grid {
-  display: grid;
-  column-gap: 6.4rem;
-  row-gap: 9.6rem;
-}
-.grid-2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-.grid--3-cols {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.grid--4-cols {
-  grid-template-columns: repeat(4, 1fr);
-}
-
-.grid--5-cols {
-  grid-template-columns: repeat(5, 1fr);
-}
-
 .step-number {
   font-size: 8.6rem;
   color: #ddd;
   font-weight: 600;
   margin-bottom: 1.2rem;
-}
-
-.grid--center-v {
-  align-items: center;
 }
 
 .step-description {
@@ -401,50 +290,9 @@ body {
   color: #cf711f;
 }
 
-/* diet-list */
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e67e22;
-}
-strong {
-  font-weight: 500;
-}
 .all-recipes {
   text-align: center;
   font-size: 1.8rem;
-}
-.link:link,
-.link:visited {
-  display: inline-block;
-  color: #e67e22;
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 2px;
-  transition: all 0.3s;
-}
-
-.link:hover,
-.link:active {
-  color: #cf711f;
-  border-bottom: 1px solid transparent;
-}
-.maregin-bottom-md {
-  margin-bottom: 4.8rem !important;
 }
 
 /**************************/
@@ -519,9 +367,6 @@ strong {
 
   width: 75%;
 }
-.grid-2-cols {
-  grid-template-columns: repeat(2, 1fr);
-}
 
 .princing-plan--starter {
   justify-self: end;
@@ -535,25 +380,18 @@ strong {
   position: relative;
   overflow: hidden;
 }
-
-.list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 1.6rem;
-}
-
-.list-item {
-  font-size: 1.8rem;
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-
-.list-icon {
-  width: 3rem;
-  height: 3rem;
-  color: #e67e22;
+.princing-plan--complete::after {
+  content: "best value";
+  position: absolute;
+  top: 6%;
+  right: -20%;
+  transform: rotate(45deg);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  text-transform: uppercase;
+  background-color: #ffd43b;
+  padding: 0.6rem 8rem;
 }
 
 .plan-header {
