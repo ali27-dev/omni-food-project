@@ -537,3 +537,11 @@
   background-size: cover;
   background-position: center;
 }
+
+/**************************/
+/* FOOTER-SECTION */
+/**************************/
+
+.footer {
+  padding: 9.6rem 0;
+}
