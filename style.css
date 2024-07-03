@@ -54,6 +54,20 @@
   background-color: #cf711f;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #333;
+}
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 /**************************/
 /* HERO */
 /**************************/
@@ -72,6 +86,7 @@
   gap: 9.6rem;
   align-items: center;
 }
+
 .text-description {
   font-size: 2rem;
   line-height: 1.6;
@@ -125,7 +140,6 @@
   padding: 4.8rem 0 3.2rem 0;
 }
 .container {
-  /* 1140px */
   max-width: 120rem;
   padding: 0 3.2rem;
   margin: 0 auto;
@@ -140,10 +154,8 @@
   color: #888;
 }
 .logos {
-  /* display: block; */
   display: flex;
   justify-content: space-around;
-  /* background-: #888; */
 }
 .logos img {
   height: 3.2rem;
