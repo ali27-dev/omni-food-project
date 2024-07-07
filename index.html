@@ -29,23 +29,33 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="general.css">
     <link rel="stylesheet" href="media.css">
+
+    <!-- js-file-links -->
+    <script
+    defer
+    src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"
+  ></script>
+  <script defer src="script.js"></script>
+
   </head>
   <body>
 
     <!-- header-section-start -->
     <header class="header">
+      <a href="#">
       <img
         src="images/meals/omnifood-logo.png"
         alt="omni food logo"
         class="logo"
       />
+    </a>
       <nav class="main-nav">
         <ul class="main-nav-li">
-          <li><a class="nav-li-link" href="#">how it work</a></li>
-          <li><a class="nav-li-link" href="#">meals</a></li>
-          <li><a class="nav-li-link" href="#">testimonial</a></li>
-          <li><a class="nav-li-link" href="#">pricing</a></li>
-          <li><a class="nav-li-link nav-btn" href="#">try for free</a></li>
+          <li><a class="nav-li-link" href="#how">how it work</a></li>
+          <li><a class="nav-li-link" href="#meals">meals</a></li>
+          <li><a class="nav-li-link" href="#testimonials">testimonial</a></li>
+          <li><a class="nav-li-link" href="#pricing">pricing</a></li>
+          <li><a class="nav-li-link nav-btn" href="#cta">try for free</a></li>
         </ul>
       </nav>
 
@@ -75,10 +85,10 @@
             </p>
 
             <!--two-buttons -->
-            <a href="#" class="btn btn--full margin-right-sm"
+            <a href="#cta" class="btn btn--full margin-right-sm"
               >start eating well</a
             >
-            <a href="#" class="btn btn--outline">learn more &darr;</a>
+            <a href="#how" class="btn btn--outline">learn more &darr;</a>
 
             <!-- Delivered-Meals -->
             <div class="delivered-meals">
@@ -157,7 +167,7 @@
       <!-- feature-section-end -->
       <!-- section-how-start -->
 
-      <section class="section-how">
+      <section class="section-how" id="how">
         <div class="container">
           <span class="subheading">How it works</span>
           <h2 class="heading-secondary">
@@ -236,7 +246,7 @@
 
 
       <!-- meals-section-start -->
-      <section class="section-meals">
+      <section class="section-meals" id="meals">
         <div class="container">
           <span class="subheading meal-he">meals</span>
           <h2 class="heading-secondary meal-he">
@@ -364,7 +374,7 @@
       </section>
 
 <!-- testimonials-section-start -->
-<section class="section-testimonials">
+<section class="section-testimonials" id="testimonials">
   <div class="testimonials-container">
     <span class="subheading">Testimonials</span>
     <h2 class="heading-secondary">Once you try it, you can't go back</h2>
@@ -517,7 +527,7 @@
 
   <!-- pricing-section-start -->
 
-  <section class="section-pricing">
+  <section class="section-pricing" id="pricing">
     <div class="container">
       <span class="subheading">Pricing</span>
       <h2 class="heading-secondary">
@@ -643,7 +653,7 @@
     <!-- pricing-section-end -->
 
 <!-- cta-section-start -->
-<section class="section-cta">
+<section class="section-cta" id="cta">
   <div class="container">
     <div class="cta">
       <div class="cta-text-box">
@@ -777,5 +787,5 @@
     <!-- footer-section-end -->
 
   </body>
-  <script src="script.js"></script>
+
 </html>
